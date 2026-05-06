@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>River Run Tribe</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:'Inter',sans-serif;
+      background:#111111;
+      color:#f5f5f5;
+      line-height:1.6;
+    }
+
+    header{
+      padding:24px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      position:fixed;
+      width:100%;
+      top:0;
+      background:rgba(17,17,17,0.85);
+      backdrop-filter:blur(10px);
+      z-index:1000;
+    }
+
+    .logo{
+      font-size:1.3rem;
+      font-weight:800;
+      letter-spacing:2px;
+    }
+
+    .logo span{
+      color:#c96b2c;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:24px;
+      font-size:0.95rem;
+    }
+
+    .hero{
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      padding:120px 8%;
+      background:
+      linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1552674605-db6ffd4facb5?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+    }
+
+    .hero-content{
+      max-width:900px;
+    }
+
+    .hero h1{
+      font-size:4rem;
+      line-height:1.1;
+      margin-bottom:24px;
+      font-weight:900;
+    }
+
+    .hero p{
+      font-size:1.2rem;
+      color:#d7d7d7;
+      margin-bottom:36px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 32px;
+      border-radius:999px;
+      text-decoration:none;
+      font-weight:700;
+      transition:0.3s;
+      margin:10px;
+    }
+
+    .btn-primary{
+      background:#c96b2c;
+      color:white;
+    }
+
+    .btn-primary:hover{
+      background:#e07c36;
+    }
+
+    .btn-secondary{
+      border:1px solid #ffffff55;
+      color:white;
+    }
+
+    section{
+      padding:100px 8%;
+    }
+
+    .section-title{
+      font-size:2.5rem;
+      margin-bottom:20px;
+      font-weight:800;
+    }
+
+    .section-text{
+      max-width:800px;
+      color:#cccccc;
+      font-size:1.1rem;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:24px;
+      margin-top:40px;
+    }
+
+    .card{
+      background:#1a1a1a;
+      padding:32px;
+      border-radius:24px;
+      border:1px solid #2b2b2b;
+    }
+
+    .card h3{
+      margin-bottom:14px;
+      font-size:1.5rem;
+    }
+
+    .card p{
+      color:#cfcfcf;
+    }
+
+    .mission{
+      background:#181818;
+      border-top:1px solid #2a2a2a;
+      border-bottom:1px solid #2a2a2a;
+    }
+
+    .quote{
+      font-size:2rem;
+      font-weight:700;
+      max-width:900px;
+      line-height:1.4;
+    }
+
+    .cta{
+      text-align:center;
+    }
+
+    .cta h2{
+      font-size:3rem;
+      margin-bottom:20px;
+    }
+
+    footer{
+      padding:40px 8%;
+      text-align:center;
+      border-top:1px solid #2a2a2a;
+      color:#9f9f9f;
+    }
+
+    @media(max-width:768px){
+
+      .hero h1{
+        font-size:2.8rem;
+      }
+
+      nav{
+        display:none;
+      }
+
+      .section-title{
+        font-size:2rem;
+      }
+
+      .cta h2{
+        font-size:2.2rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="logo">
+    RIVER RUN <span>TRIBE</span>
+  </div>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#mission">Mission</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#join">Join</a>
+  </nav>
+
+</header>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <h1>
+      Move More.<br>
+      Run Together.<br>
+      Grow Stronger.
+    </h1>
+
+    <p>
+      River Run Tribe is a community-driven run club based in Columbia, Maryland.
+      We run, walk, connect, and push each other to become stronger physically,
+      mentally, and spiritually.
+    </p>
+
+    <a href="#join" class="btn btn-primary">
+      Join The Tribe
+    </a>
+
+    <a href="#schedule" class="btn btn-secondary">
+      View Schedule
+    </a>
+
+  </div>
+
+</section>
+
+<section id="about">
+
+  <h2 class="section-title">
+    What We Do
+  </h2>
+
+  <p class="section-text">
+    River Run Tribe brings people together through movement,
+    wellness, accountability, and community.
+    Whether you are a beginner, a walker, or an experienced runner,
+    this is a place where people grow together.
+  </p>
+
+</section>
+
+<section class="mission" id="mission">
+
+  <h2 class="section-title">
+    Our Mission
+  </h2>
+
+  <p class="quote">
+    “Move More with a community that supports you.
+    It’s way more than running.”
+  </p>
+
+</section>
+
+<section id="schedule">
+
+  <h2 class="section-title">
+    Weekly Runs
+  </h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>Wednesday Evening Run</h3>
+      <p>
+        6:00 PM<br><br>
+        Midweek movement, community energy,
+        and a reset for the mind.
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>Sunday Morning Run</h3>
+      <p>
+        8:00 AM<br><br>
+        Start the day with movement,
+        fresh air, and positive energy.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<section class="cta" id="join">
+
+  <h2>
+    Ready To Move With Us?
+  </h2>
+
+  <p class="section-text" style="margin:auto;">
+    Join River Run Tribe and become part of a growing
+    Columbia, Maryland movement built around discipline,
+    wellness, connection, and growth.
+  </p>
+
+  <br><br>
+
+  <a href="https://instagram.com" class="btn btn-primary">
+    Follow Us On Instagram
+  </a>
+
+</section>
+
+<footer>
+
+  <p>
+    River Run Tribe • Columbia, Maryland
+  </p>
+
+  <p>
+    All Paces Welcome
+  </p>
+
+</footer>
+
+</body>
+</html>
